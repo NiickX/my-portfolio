@@ -201,3 +201,17 @@ hr {
   color: black;
   border: 2px solid blue;
 }
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+footer a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: white;
+  text-decoration: underline;
+}
