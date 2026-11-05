@@ -1,192 +1,203 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
-body{
-    font-family: "Montserrat", sans-serif;
-    background-color: black;
-    color: white;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
 }
 
-body::before{
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('dotes.png') center/cover no-repeat;
-    filter: blur(8px);
-    z-index: -1;
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
-    mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("dotes.png") center/cover no-repeat;
+  filter: blur(8px);
+  z-index: -1;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
+  mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
 }
 
-main{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-
-.home-content{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: 3px 3px 0px black;
+.home-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 3px 3px 0px black;
 }
 
-.home-content h1{
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 1.2;
+.home-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.home-content h3{
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    font-weight: 500;
+.home-content h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
 }
-
 
 .profile,
 .gallery,
-.contact{
-    padding: 4rem 0;
+.contact {
+  padding: 4rem 0;
 }
 
-h2{
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-    
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 
-hr{
-    width: 200px;
-    height: 3px;
-    background: white;
-    opacity: 0.4;
-    margin-bottom: 1.5rem;
+hr {
+  width: 200px;
+  height: 3px;
+  background: white;
+  opacity: 0.4;
+  margin-bottom: 1.5rem;
 }
 
-.profile p{
-    font-size: 1.2rem;
-    line-height: 1.8;
+.profile p {
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
-
-.gallery-images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
-.gallery-images img{
-    width: 100%;
-    height: 500px;
-    object-fit: fill;
-    border-radius: 1rem;
+.gallery-images img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
 }
 
-
-.contact-info p{
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.gallery-images img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
-.contact-info i{
-    width: 2rem;
-    font-size: 1.6rem;
-    text-align: center;
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.contact-text{
-    margin: 1.5rem 0;
-    font-size: 1.1rem;
+.contact-info i {
+  width: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
-.contact form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
+.contact-text {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact input,
-.contact textarea{
-    width: 100%;
-    padding: 1rem;
-    font-family: inherit;
-    font-size: 1rem;
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-    border-bottom: 2px solid white;
-    border-radius: 0.3rem;
+.contact textarea {
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid white;
+  border-radius: 0.3rem;
 }
 
 .contact input::placeholder,
-.contact textarea::placeholder{
-    color: rgba(255, 255, 255, 0.6);
+.contact textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .contact input:focus,
-.contact textarea:focus{
-    background: rgba(255, 255, 255, 0.2);
+.contact textarea:focus {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.contact textarea{
-    resize: vertical;
+.contact textarea {
+  resize: vertical;
 }
 
-.contact button{
-    align-self: flex-start;
-    padding: 1rem 2rem;
-    background: white;
-    color: black;
-    font-family: inherit;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.contact button {
+  align-self: flex-start;
+  padding: 1rem 2rem;
+  background: white;
+  color: black;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.contact button:hover{
-    transform: scale(1.05);
+.contact button:hover {
+  transform: scale(1.05);
+  background: blue;
+  color: white;
+  border: 2px solid white;
 }
 
-
-.icons{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: 1px solid white;
-    background: black;
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 1.5rem;
-    transition: transform 0.3s ease;
+.icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid white;
+  background: black;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
-.icons a:hover{
-    transform: scale(1.1);
+.icons a:hover {
+  transform: scale(1.1);
+  background: white;
+  color: black;
+  border: 2px solid blue;
 }
-
