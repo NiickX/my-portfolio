@@ -1,71 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>My portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
+      <header class="home-content" id="home">
+        <h1>Hi, I'm Dominick R. Oraba</h1>
+        <h3>Bachelor of Science in Information Technology</h3>
+      </header>
 
-        <header class="home-content" id="home">
-            <h1>Hi, I'm Dominick R. Oraba</h1>
-            <h3>Bachelor of Science in Information Technology</h3>
-        </header>
+      <section class="profile">
+        <h2>About Me</h2>
+        <hr />
+        <p>
+          I'm currently a third-year Information Technology student at
+          Polytechnic University of the Philippines San Juan Campus. I'm
+          passionate about technology and programming, and aspiring to become a
+          skilled back-end developer. Also, I'm always eager to learn new things
+          and improve my skills in the field of Information Technology.
+        </p>
+      </section>
 
-        <section class="profile">
-            <h2>About Me</h2>
-            <hr>
-            <p>I'm currently a third-year Information Technology student at Polytechnic University of the Philippines San Juan Campus.
-            I'm passionate about technology and programming, and aspiring to become a skilled back-end developer.
-            Also, I'm always eager to learn new things and improve my skills in the field of Information Technology.</p>
-        </section>
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <hr />
+        <div class="gallery-images">
+          <img src="Pusa.jpeg" alt="Gallery photo 1" />
+          <img src="Pusa.jpeg" alt="Gallery photo 2" />
+          <img src="Pusa.jpeg" alt="Gallery photo 3" />
+          <img src="Pusa.jpeg" alt="Gallery photo 4" />
+        </div>
+      </section>
 
-        <section class="gallery" id="gallery">
-            <h2>Gallery</h2>
-            <hr>
-            <div class="gallery-images">
-                <img src="Pusa.jpeg" alt="Gallery photo 1">
-                <img src="Pusa.jpeg" alt="Gallery photo 2">
-                <img src="Pusa.jpeg" alt="Gallery photo 3">
-                <img src="Pusa.jpeg" alt="Gallery photo 4">
-            </div>
-        </section>
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <hr />
 
-        <section class="contact" id="contact">
-            <h2>Contact Me</h2>
-            <hr>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-location-dot"></i> Metro Manila, PH</p>
+          <p><i class="fa-solid fa-phone"></i> Phone: +63 917 231 9022</p>
+          <p><i class="fa-solid fa-envelope"></i> Email: brtbrt@gmail.com</p>
+        </div>
 
-            <div class="contact-info">
-                <p><i class="fa-solid fa-location-dot"></i> Metro Manila, PH</p>
-                <p><i class="fa-solid fa-phone"></i> Phone: +63 917 231 9022</p>
-                <p><i class="fa-solid fa-envelope"></i> Email: brtbrt@gmail.com</p>
-            </div>
+        <p class="contact-text">Send me a message:</p>
 
-            <p class="contact-text">Send me a message:</p>
+        <form action="#" method="post">
+          <input type="text" placeholder="Name" required name="Name" />
+          <input type="email" placeholder="Email" required name="Email" />
+          <input type="text" placeholder="Subject" required name="Subject" />
+          <textarea
+            placeholder="Message"
+            required
+            name="Message"
+            rows="5"
+          ></textarea>
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
 
-            <form action="#" method="post">
-                <input type="text" placeholder="Name" required name="Name">
-                <input type="email" placeholder="Email" required name="Email">
-                <input type="text" placeholder="Subject" required name="Subject">
-                <textarea placeholder="Message" required name="Message" rows="5"></textarea>
-                <button type="submit">
-                    <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE
-                </button>
-            </form>
-
-            <div class="icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
-        </section>
-
+        <div class="icons">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </section>
     </main>
-</body>
+    <footer>
+      <p>&copy; 2026 Dominick R. Oraba. All rights reserved.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+  </body>
+  </body>
 </html>
