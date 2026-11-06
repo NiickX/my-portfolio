@@ -57,13 +57,8 @@ main {
 
 .profile,
 .gallery,
-<<<<<<< HEAD
-.contact{
-    padding: 5rem 0;
-=======
 .contact {
-  padding: 4rem 0;
->>>>>>> 153739b8c513dd724b96148166f913bc861497e2
+  padding: 5rem 0;
 }
 
 h2 {
