@@ -287,3 +287,46 @@ footer a:hover {
   background: blue;
   color: white;
 }
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s;
+}
+
+#lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+#lightboxImg {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+#lightboxClose {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}

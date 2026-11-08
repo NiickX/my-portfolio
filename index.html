@@ -103,51 +103,12 @@
     <button id="backToTop" aria-label="Back to top">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
-    <script>
-      const backToTop = document.getElementById("backToTop");
-      let lastScrollY = window.scrollY;
-
-      window.addEventListener("scroll", () => {
-        const currentScrollY = window.scrollY;
-
-        if (currentScrollY > lastScrollY && currentScrollY > 0) {
-          backToTop.classList.add("show");
-        } else {
-          backToTop.classList.remove("show");
-        }
-
-        lastScrollY = currentScrollY;
-      });
-
-      backToTop.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-
-      const sections = document.querySelectorAll(
-        "main > header[id], main > section[id]",
-      );
-
-      const navLinks = document.querySelectorAll("nav a");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              navLinks.forEach((link) => {
-                link.classList.toggle(
-                  "active",
-                  link.getAttribute("href") === "#" + entry.target.id,
-                );
-              });
-            }
-          });
-        },
-        {
-          rootMargin: "-50% 0px -50% 0px",
-        },
-      );
-
-      sections.forEach((section) => observer.observe(section));
-    </script>
+    <div id="lightbox" aria-hidden="true">
+      <button id="lightboxClose" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
