@@ -15,10 +15,17 @@
     <title>My portfolio</title>
   </head>
   <body>
+    <div class="depth-background" aria-hidden="true">
+      <div class="depth-grid"></div>
+      <div class="depth-orbit depth-orbit-one"><i></i><i></i><i></i></div>
+      <div class="depth-orbit depth-orbit-two"><i></i><i></i><i></i></div>
+      <div class="depth-frame depth-frame-one"><span></span></div>
+      <div class="depth-frame depth-frame-two"><span></span></div>
+    </div>
     <main>
       <nav class="nav">
         <div class="logo">
-          <h1>Portfolio</h1>
+          <h1><a href="#home">Portfolio</a></h1>
         </div>
         <div class="nav-links">
           <a href="#home">Home</a>
@@ -28,8 +35,14 @@
         </div>
       </nav>
       <header class="home-content" id="home">
-        <h1>Hi, I'm Dominick R. Oraba</h1>
-        <h3>Bachelor of Science in Information Technology</h3>
+        <div class="home-img">
+          <img class="img-main" src="labron1.jpg" alt="Dominick R. Oraba" />
+          <img class="img-hover" src="labron.jpg" alt="" />
+        </div>
+        <div class="home-text">
+          <h1>Hi, I'm<span> Dominick R. Oraba</span></h1>
+          <h3>Bachelor of Science in Information Technology</h3>
+        </div>
       </header>
 
       <section class="profile" id="about">
@@ -39,8 +52,8 @@
           I'm currently a third-year Information Technology student at
           Polytechnic University of the Philippines San Juan Campus. I'm
           passionate about technology and programming, and aspiring to become a
-          skilled back-end developer. Also, I'm always eager to learn new things
-          and improve my skills in the field of Information Technology.
+          skilled developer. Also, I'm always eager to learn new things and
+          improve my skills in the field of Information Technology.
         </p>
       </section>
 
@@ -81,23 +94,20 @@
             <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE
           </button>
         </form>
-
-        <div class="icons">
-          <a href="#" aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" aria-label="LinkedIn"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        </div>
       </section>
     </main>
     <footer>
+      <div class="icons">
+        <a href="https://www.facebook.com/dominick.oraba" aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/NiickX" aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
       <p>&copy; 2026 Dominick R. Oraba. All rights reserved.</p>
     </footer>
     <button id="backToTop" aria-label="Back to top">
